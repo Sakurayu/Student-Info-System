@@ -1,0 +1,5 @@
+<h2>Edit Comment</h2>
+<form acition="/comments/<%= @comment.id %>" method="post">
+  <input type="hidden" name="method" value="put">
+  <%= erb :comment_form %>
+</form>

@@ -1,0 +1,16 @@
+<p><strong>Comments</strong></p>
+
+<p>List of Comments (You can delete comment once log in)</p>
+
+  <% if @comments.any? %>
+    <% @comments.each do|comment| %>
+    <li>
+      <a href="/comments/<%= comment.id %>"><%=comment.personname%></a> - <%=comment.created_at%>
+    </li>
+    <% end %>
+  <% else %>
+    <p>No Comment</p>
+  <% end %>
+
+
+<p><a href='/comments/new'>Add A New Comment</a></p>

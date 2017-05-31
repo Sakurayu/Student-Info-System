@@ -1,0 +1,10 @@
+<p>Name: <%=@comment.personname%></p>
+<p>Content: <%=@comment.content%></p>
+<p>Created at: <%=@comment.created_at%></p>
+
+<form action='/comments/<%=@comment.id%>' method='post'>
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete Comment">
+</form>
+
+<p><a href="/comments">Back To Comment List</a></p>

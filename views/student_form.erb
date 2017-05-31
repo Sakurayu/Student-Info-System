@@ -1,0 +1,28 @@
+<label>
+  FirstName:
+  <input type="text" patten=".{3,}" required title="3 characters minimum" minlength="3" name=student[firstname] value=<%= @student.firstname %>>
+</label>
+<br>
+<label>
+  LastName:
+  <input type="text" patten=".{3,}" required title="3 characters minimum" minlength="3" name=student[lastname] value=<%= @student.lastname %>>
+</label>
+<br>
+<label>
+  Studentid:
+  <input type="text" patten=".{1,}" required title="1 character minimum" minlength="1"type="text" name=student[studentid] value=<%= @student.studentid %>>
+</label>
+<br>
+<label>
+  Birthday:
+  <input type="date" max="06-01-2017" required pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" required title="Enter a date in formart MM-DD-YYYY" name=student[birthday] value=<%= @student.birthday %>>
+</label>
+<br>
+<label>
+  Address:
+  <input type="text" name=student[address] value=<%= @student.address %>>
+</label>
+<br>
+<input type="submit" name="save" value="Save">
+<br>
+<a href="/">Cancel</a>

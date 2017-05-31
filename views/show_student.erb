@@ -1,0 +1,14 @@
+<p>FirstName: <%=@student.firstname%> </p>
+<p>LastName: <%=@student.lastname%></p>
+<p>Studentid: <%=@student.studentid%></p>
+<p>Birthday: <%=@student.birthday%></p>
+<p>Address: <%=@student.address%></p>
+
+<p><a href="/students">Back To Student List</a></p>
+
+<p><a href="/students/<%=@student.id%>/edit">Edit Student</a></p>
+
+<form action='/students/<%=@student.id%>' method='post'>
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete Student">
+</form>
