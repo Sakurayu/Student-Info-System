@@ -16,10 +16,10 @@ end
 DataMapper.finalize
 DataMapper.auto_upgrade!
 
-configure do              #username is u, password is p
+configure do
   enable :sessions
   set :username, "u"
-  set :password, "p"
+  set :password, "p"    #username is u, password is p
 end
 
 post '/login' do
