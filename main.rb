@@ -42,7 +42,7 @@ not_found do
   erb :not_found
 end
 
-configure :development, do
+configure :development do
 DataMapper.setup(:default,
 "sqlite3://#{Dir.pwd}/development.db")
 end
