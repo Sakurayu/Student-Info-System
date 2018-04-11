@@ -13,5 +13,5 @@ For comments, you will be able to check/add comments without login. Only logged 
 * Login information: username: _u_ password: _p_
 <br>
 
-[![Student_Info_System_Screen_Shot.jpg](https://s20.postimg.org/xtdbgdcvh/Student_Info_System_Screen_Shot.jpg)](https://postimg.org/image/7l26qzsrt/)
+![ScreenShot](https://image.ibb.co/hh9BxH/Student_Info_System_Screen_Shot.jpg)
 
